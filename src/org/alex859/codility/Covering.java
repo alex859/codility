@@ -10,11 +10,10 @@ public class Covering {
         
         for(int i=0;i<N;i++){
         	if(foundValues[A[i]]==0){
-        		//i found an new value, this could be a solution
+        		//i found a new value, this could be a solution
         		P=i;
+		       	foundValues[A[i]]=1;
         	}
-        	
-        	foundValues[A[i]]++;
         }
         
         return P;
